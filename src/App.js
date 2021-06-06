@@ -1,4 +1,4 @@
-import { key, base_url } from './api';
+import { popularGamesURL } from './api';
 import axios from 'axios';
 
 function App() {
