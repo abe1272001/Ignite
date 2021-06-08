@@ -1,7 +1,11 @@
-import { popularGamesURL } from './api';
-import axios from 'axios';
-
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { loadGames } from './actions/gamesAction';
 function App() {
+	const dispatch = useDispatch();
+	useEffect(() => {
+		dispatch(loadGames());
+	});
 	return (
 		<div className="App">
 			<h1>Hellp ignite</h1>
